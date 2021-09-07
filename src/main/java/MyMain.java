@@ -1,55 +1,46 @@
 public class MyMain {
-    // Adds 5 to the given integer
-    // This method has been written for you
-    public static int add5(int x) {
-        return (x + 5);
-    }
-
-    // Given three ints x, y, and z, this method
-    // returns the largest of the three numbers
-    public static int findBiggestNumber(int x, int y, int z) {
+    // Takes two Strings as input, and returns a String equal to the first half
+    // of the shorter String plus the second half of the longer String.
+    public static String halfAdder(String str1, String str2) {
         // REPLACE THIS WITH YOUR CODE
-        return 0;
+        return "";
     }
 
-    // This method simulates the flip of a coin, where
-    // true represents "heads" and false represents "tails"
-    // This method should return true half the time, and false the other half
-    public static boolean flipCoin() {
+    // Takes a String as input, and returns true if the String contains an 'A' or 'a'
+    // and returns false otherwise
+    public static boolean checkIfA(String str) {
         // REPLACE THIS WITH YOUR CODE
         return false;
     }
 
-    // This method simulates the flip of a weighted coin,
-    // that is a coin that is biased towards heads
-    public static boolean flipWeightedCoin() {
-        // REPLACE THIS WITH YOUR CODE
-        return false;
+    //  Takes in two Strings as input and returns a String equal to those two Strings added
+    //  together in alphabetic order.
+    public static String stringOrder(String str1, String str2) {
+        return "";
     }
 
-    // This method rounds a double to the nearest whole number
-    public static int round(double d) {
-        // REPLACE THIS WITH YOUR CODE
-        return 0;
-    }
-
-    // This method returns a random number between 1 and 6, inclusive
-    public static int rollDie() {
-        // REPLACE THIS WITH YOUR CODE
-        return 0;
-    }
-
-    // This method carries out the quadratic formula and *prints* out the answers
-    public static void quadForm(int a, int b, int c) {
-        return;
-    }
 
     public static void main(String[] args) {
-        // Test the add5 method
-        int x = 2;
-        int y = add5(x);
-        System.out.println(y);
+        // Some code to test halfAdder
+        System.out.println("halfAdder tests:");
+        System.out.println(halfAdder("computer","science")); // sciuter
+        System.out.println(halfAdder("apple","fig")); // fple
+        System.out.println(halfAdder("banana","boat")); // boana
+        System.out.println(halfAdder("crablike","pineapple")); // crabapple
+        System.out.println(halfAdder("trombone", "hippie")); // hipbone
 
-        // YOUR CODE HERE
+        // Some code to test checkIfA
+        System.out.println("\ncheckIfA tests:");
+        System.out.println(checkIfA("asdf")); // true
+        System.out.println(checkIfA("bAnAnA")); // true
+        System.out.println(checkIfA("fig")); // false
+
+        // Some code to test stringOrder
+        System.out.println("\nstringOrder tests:");
+        System.out.println(stringOrder("apple", "banana")); // applebanana
+        System.out.println(stringOrder("banana", "apple")); // applebanana
+        System.out.println(stringOrder("cranberry", "banana")); // bananacranberry
+        System.out.println(stringOrder("apple", "Banana")); // appleBanana
+        System.out.println(stringOrder("Cranberry", "apple")); // appleCranberry
     }
 }
