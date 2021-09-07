@@ -8,11 +8,16 @@ This is a repository where you can write your code for today. You can also take 
 Add code to [MyMain.java](src/main/java/MyMain.java) to do the desired thing.
 
 ## Run your code with:
+The easiest way to run your code is to press the play button in [MyMain.java](src/main/java/MyMain.java).
+
+However, you can also run your code by typing the following into the Terminal.
+
 ```shell script
 make run
 ```
 
-## Run your tests with:
+Alternatively, if that doesn't work, use:
+
 ```shell script
-make test
+./gradlew run
 ```
